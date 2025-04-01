@@ -1,0 +1,58 @@
+.footer {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative; 
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Social Media Icons */
+.social-icons img {
+  width: 25px;
+  margin: 0 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2); /* Slight zoom on hover */
+}
+
+/* Footer Links */
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  color: #1A73E8; /* Light Blue */
+}
+
+
+
+/* Layout Fix for Full-Height Pages */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  margin-top: 70px; /* Adjust for header */
+  margin-bottom: 70px; /* Adjust for footer */
+  overflow-y: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .social-icons img {
+      width: 20px;
+  }
+
+  .btn-top {
+      font-size: 14px;
+      padding: 6px 10px;
+  }
+
+  .main-content {
+      margin-bottom: 90px;
+  }
+}

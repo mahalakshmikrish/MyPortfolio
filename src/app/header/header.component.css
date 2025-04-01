@@ -1,0 +1,35 @@
+/* Header Styling */
+.header {
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  /* Logo Styling */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .logo:hover {
+    color: #ff99bb; /* Light Blue */
+  }
+  
+ 
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .btn-primary {
+      margin-top: 10px;
+    }
+  }
+  

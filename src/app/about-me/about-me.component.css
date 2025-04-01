@@ -1,0 +1,212 @@
+/* Main About Page Container */
+.about-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+/* Sections Spacing */
+section {
+    margin-bottom: 50px;
+}
+
+/* About Section: GIF & Content */
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.skills-section, .experience-section, .education-section, .awards-section{
+    align-items: center;
+    gap: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);   
+}
+
+/* GIF Styling */
+.about-image img {
+    width: 320px;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid white;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* About Content */
+.about-content {
+    flex: 1;
+}
+
+/* Section Titles */
+h1, h2, h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff9933;
+}
+
+p{
+    font-style: italic;
+    color: white;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background:  #ff9933;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: white;
+}
+
+/* Timeline (Experience) */
+.timeline {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline li {
+    background: #f2f2f2;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Education List */
+.education-list {
+    list-style: none;
+    padding: 0;
+}
+
+.education-list li {
+    background: #f2f2f2;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.timeline p{
+    color: black;
+}
+.education-list p{
+    color: black;
+}
+
+/* Awards Section */
+.awards-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.awards-section ul li {
+    background: #f2f2f2;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        width: 250px;
+    }
+
+    .skills-grid {
+        justify-content: center;
+    }
+}
+/* Certifications Section */
+.certifications-section {
+    margin-top: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Horizontal Scroll Container */
+.certifications-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px;
+    scroll-behavior: smooth;
+}
+
+/* Certification Cards */
+.certification-card {
+    min-width: 250px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.certification-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.certification-card p {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Hover Effect */
+.certification-card:hover {
+    transform: scale(1.05);
+}
+
+/* Scrollbar Customization */
+.certifications-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.certifications-container::-webkit-scrollbar-thumb {
+    background: #ff9933;
+    border-radius: 10px;
+}
+
+.certifications-container::-webkit-scrollbar-track {
+    background: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .certifications-container {
+        flex-wrap: nowrap;
+    }
+
+    .certification-card {
+        min-width: 200px;
+    }
+}

@@ -1,0 +1,71 @@
+/* Ensure full-page height usage */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main Wrapper to Maintain Layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh; /* Ensures footer appears at the bottom */
+}
+
+
+/* Main Content - Pushes Footer to Bottom */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;  /* Adjust according to header height */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .btn-primary {
+      margin-top: 10px;
+  }
+
+  .main-content {
+      margin-top: 10px; /* Adjust if needed */
+  }
+}
+
+/* Apply Background Image to the Entire Page */
+body {
+  background: url('assets/background.jpg') no-repeat center center fixed; 
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ensure the Root Component Takes Full Height */
+app-root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Make Main Content Push Footer to Bottom */
+.main-content {
+  flex: 1;
+}
+
+/* Header and Footer Background Should Be Transparent */
+.header, .footer {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  width: 100%;
+}

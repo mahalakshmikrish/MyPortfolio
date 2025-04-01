@@ -1,0 +1,10 @@
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: 0.3s;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ff4d88 !important;
+  }
